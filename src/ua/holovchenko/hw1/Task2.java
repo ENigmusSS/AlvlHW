@@ -1,11 +1,13 @@
+package ua.holovchenko.hw1;
+
 import java.util.Scanner;
 
-public class Main {
+public class Task2 {
     public static void main(String[] args) {
         System.out.println("Hello world!");
         int num = getUserNum();
-        int revnum = reverse(num);
-        System.out.println(revnum);
+        int revNum = reverse(num);
+        System.out.println(revNum);
     }
     public static int getUserNum() {
         Scanner scanner = new Scanner(System.in);
@@ -13,9 +15,9 @@ public class Main {
         return scanner.nextInt();
     }
     public static int reverse (int num) {
-        String numst = String.valueOf(num);
-        StringBuilder numstb = new StringBuilder(numst);
-        String revst = numstb.reverse().toString();
-        return Integer.parseInt(revst);
+        String numSt = String.valueOf(num);
+        StringBuilder numStB = new StringBuilder(numSt);
+        String revSt = numStB.reverse().toString();
+        return Integer.parseInt(revSt);
     }
 }

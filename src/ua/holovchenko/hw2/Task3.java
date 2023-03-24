@@ -1,6 +1,8 @@
+package ua.holovchenko.hw2;
+
 import java.util.Scanner;
 
-public class Main {
+public class Task3 {
     public static void main(String[] args) {
         System.out.println("Enter the numbers");
         Scanner scanner = new Scanner(System.in);
