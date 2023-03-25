@@ -11,8 +11,10 @@ public class Task1 {
         System.out.println(unSpacedString);
         System.out.println("isPalindrome =" + isPalindrome(unSpacedString).toString());
     }
-
     public static String unSpacer(String string) {
+        return string.replaceAll(" ", "");
+    }
+    public static String unSpacerLegacy(String string) {
         StringBuilder stringBuilder = new StringBuilder(string);
         for (int i = 0; i < stringBuilder.length(); i++) {
             if (stringBuilder.charAt(i) == 32) {

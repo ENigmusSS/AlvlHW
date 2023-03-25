@@ -7,8 +7,15 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the line");
         String string = scanner.nextLine();
+        string =spaceTrimmer(string);
         System.out.println(wordAmount(string) + " word(s)");
 
+    }
+    public static String spaceTrimmer(String string) {
+        string = string.trim();
+        while (string.contains("  ")) {
+        string = string.replaceAll("  ", " ");}
+        return string;
     }
     public static int wordAmount(String string) {
         StringBuilder stringBuilder = new StringBuilder(string);
