@@ -18,6 +18,7 @@ public class Task2 {
         return string;
     }
     public static int wordAmount(String string) {
+        if (string.length()==0) return 0;
         StringBuilder stringBuilder = new StringBuilder(string);
         int wordAmount = 1;
         for (int i = 0; i < stringBuilder.length(); i++) {
