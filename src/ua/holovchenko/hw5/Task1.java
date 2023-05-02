@@ -11,17 +11,17 @@ public class Task1 {
         }
     }
 
-    public static int[][] create(){
+    public static int[][] create() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter matrix` sizes");
         return new int[scanner.nextInt()][scanner.nextInt()];
     }
+
     public static int[][] fill(int[][] array) {
         int index = -1;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                 array[i][j] =  i % 2 == 0 ? Math.abs(index) : index;
-                 index--;
+                array[i][j] = i % 2 == 0 ? Math.abs(index--) : index--;
             }
         }
         return array;
