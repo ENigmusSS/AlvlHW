@@ -32,12 +32,12 @@ public class Task3 {
     }
 
     public static int[][] transposeMatrix(int[][] source) {
-        int[][] reverse = new int[source.length][source[0].length];
-        for (int i = 0; i < reverse.length; i++) {
-            for (int j = 0; j < reverse[i].length; j++) {
-                reverse[i][j] = source[j][i];
+        int[][] transposed = new int[source.length][source[0].length];
+        for (int i = 0; i < transposed.length; i++) {
+            for (int j = 0; j < transposed[i].length; j++) {
+                transposed[i][j] = source[j][i];
             }
         }
-        return reverse;
+        return transposed;
     }
 }
