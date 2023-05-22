@@ -1,5 +1,7 @@
 package ua.holovchenko.hw4;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Arrays;
 
 import static java.util.Arrays.stream;
@@ -34,7 +36,14 @@ public class Task1 {
         for (int num : array) {
             product *= num;
         }
-        return Math.exp(Math.log(product) / array.length);
-        //var return Math.pow(product, 1.0/array.length)
+        return round(Math.exp(Math.log(product) / array.length),5);
+        //return round(Math.pow(product, 1.0/array.length),5);
+    }
+    private static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        BigDecimal bd = new BigDecimal(Double.toString(value));
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 }
