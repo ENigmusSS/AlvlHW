@@ -21,11 +21,11 @@ public class Main {
         Phone phone1 = new Phone();
         phone1.weight = 999;
         phone1.model = "Nokia 3310";
-        phone1.number = 666131313;
+        phone1.number = "666131313";
 
-        Phone phone2 = new Phone(951067777, "samsung Galaxy S6");
+        Phone phone2 = new Phone("951067777", "samsung Galaxy S6");
         phone2.weight = 150;
-        Phone phone3 = new Phone(369765513, "xiaomi Redmi note 9 pro", 200);
+        Phone phone3 = new Phone("369765513", "xiaomi Redmi note 9 pro", 200);
         return new Phone[]{phone1, phone2, phone3};
     }
 

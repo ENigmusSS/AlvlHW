@@ -7,7 +7,9 @@ public class Task3 {
         try {
             exRoulette();
         }
-        catch (Ex1 | Ex2 | Ex3 ex) {System.out.println(ex.getMessage());}
+        catch (Ex1 | Ex2 | Ex3 ex) {
+            System.err.println(ex.getMessage());
+        }
     }
 
     public static void exRoulette() throws Ex1, Ex2, Ex3 {

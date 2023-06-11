@@ -9,4 +9,9 @@ public class Task1Test {
         int[] priceList = {1000,900,400,1750,1250};
         assertEquals(3000, Task1.sumOver1000(priceList));
     }
+    @Test
+    public void zeroBigPriseTest(){
+        int[] priceList = {900, 500, 250, 450, 750};
+        assertEquals(0, Task1.sumOver1000(priceList));
+    }
 }
