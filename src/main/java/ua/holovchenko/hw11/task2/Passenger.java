@@ -1,4 +1,4 @@
-package ua.holovchenko.hw11.Task2;
+package ua.holovchenko.hw11.task2;
 
 import java.util.Objects;
 

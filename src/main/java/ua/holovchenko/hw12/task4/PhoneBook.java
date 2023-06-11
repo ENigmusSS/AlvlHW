@@ -1,4 +1,4 @@
-package ua.holovchenko.hw12.Task4;
+package ua.holovchenko.hw12.task4;
 
 import java.util.Objects;
 import java.util.Optional;
@@ -17,6 +17,8 @@ public class PhoneBook {
         return Optional.empty();
     }
 }
+
 //int index = Arrays.binarySearch(PHONE_BOOK, phoneNumber);
 //if (index == -1) return Optional.empty();
 //else return Optional.of(index);
+// Array to ArrayList .contains() ?

@@ -1,4 +1,4 @@
-package ua.holovchenko.hw11.Task2;
+package ua.holovchenko.hw11.task2;
 
 import java.util.Arrays;
 
@@ -22,7 +22,10 @@ public class PassengerCar extends Car implements Recovery {
                 passengers[i] = passenger;
                 System.out.println(passenger.name + "сел на место" + (i + 1));
                 break;
-            } else System.out.println("Место" + (i + 1) + "занято");
+            }
+            else {
+                System.out.println("Место" + (i + 1) + "занято");
+            }
         }
     }
 }
