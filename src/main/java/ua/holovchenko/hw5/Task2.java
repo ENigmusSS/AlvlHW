@@ -9,10 +9,6 @@ public class Task2 {
         int[] numbers = createFilledArray(10);
         System.out.println(Arrays.toString(numbers));
         System.out.println(isNotRaising(numbers));
-        int[] checkFalse = {1, 2, 4, 9, 5,6};
-        System.out.println("checkFalse=" + isNotRaising(checkFalse));
-        int[] checkTrue = {7,6,5,4,3,2,1};
-        System.out.println("checkTrue=" + isNotRaising(checkTrue));
         int[] manual = manualInput();
         System.out.println(Arrays.toString(manual));
         System.out.println(isNotRaising(manual));
