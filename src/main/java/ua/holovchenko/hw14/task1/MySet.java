@@ -1,5 +1,7 @@
 package ua.holovchenko.hw14.task1;
 
+import java.util.HashSet;
+
 public class MySet<E> {
     private E[] set;
     private int size;
@@ -11,8 +13,8 @@ public class MySet<E> {
 
     public boolean add(E element) {
         if (contains(element)) {
-            System.err.println("Already exists in set!");
-            return false;
+            System.out.println("Already exists in set!");
+            return true;
         }
 
         if (size == set.length) {
@@ -27,8 +29,7 @@ public class MySet<E> {
 
     public E get(int index) {
         if (index < 0 || index >= size) {
-            System.err.println("Invalid index: " + index);
-            return null;
+            throw new IndexOutOfBoundsException("Illegal index");
         }
         return set[index];
     }
