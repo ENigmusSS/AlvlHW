@@ -23,17 +23,17 @@ public class ArrayUtils {
                 .map(Object::toString)
                 .collect(Collectors.toList());
     }
+
     public static List<String> doubling(List<String> strings) {
         List<String> doubled = new ArrayList<>();
-        for (String string:
-             strings) {
+        for (String string : strings) {
             doubled.add(string + string);
         }
         return doubled;
     }
 
     public static void main(String[] args) {
-        List<Integer> numbers = Arrays.asList(1,2,3,4,5);
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
         System.out.println(numbers);
         System.out.println(getSum(numbers));
         List<Integer> odds = getOddNumbers(numbers);

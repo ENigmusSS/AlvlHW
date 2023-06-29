@@ -31,6 +31,5 @@ public class Box {
         return volume;
     }
 
-
     private final int volume;
 }

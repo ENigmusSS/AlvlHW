@@ -8,12 +8,20 @@ public class Task3 {
 
     public static class ZerosFirstDescendingBoxComparator implements Comparator<Box> {
         public int compare(Box a, Box b) {
-            if (a.getVolume() == b.getVolume()) return 0;
-            if (a.getVolume() == 0) return -1;
-            if (b.getVolume() == 0) return 1;
-            else return b.getVolume()-a.getVolume();
+            if (a.getVolume() == b.getVolume()) {
+                return 0;
+            }
+            if (a.getVolume() == 0) {
+                return -1;
+            }
+            if (b.getVolume() == 0) {
+                return 1;
+            } else {
+                return b.getVolume() - a.getVolume();
+            }
         }
     }
+
     public static void main(String[] args) {
         ZerosFirstDescendingBoxComparator comparator = new ZerosFirstDescendingBoxComparator();
         TreeSet<Box> boxSet = new TreeSet<>(comparator);
