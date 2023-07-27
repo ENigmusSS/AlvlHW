@@ -1,4 +1,4 @@
-package ua.holovchenko.hw31.task2;
+package ua.holovchenko.hw32.task2;
 
 import lombok.SneakyThrows;
 

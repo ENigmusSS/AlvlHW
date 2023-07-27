@@ -2,7 +2,6 @@ package ua.holovchenko.hw32.task1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ua.holovchenko.hw31.task1.Task1;
 
 public class Task1Test {
     @Test

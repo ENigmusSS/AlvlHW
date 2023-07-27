@@ -1,4 +1,4 @@
-package ua.holovchenko.hw31.task1;
+package ua.holovchenko.hw32.task1;
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
