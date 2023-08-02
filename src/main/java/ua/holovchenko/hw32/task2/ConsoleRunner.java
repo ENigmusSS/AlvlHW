@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import static java.lang.Thread.sleep;
 
-public class Task2 {
+public class ConsoleRunner {
     @SneakyThrows
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -24,16 +24,23 @@ public class Task2 {
             else System.out.println("Invalid bet: choose existing horse");
         } while (!validBet);
         for (int i = 0; i < horseAmount; i++) {
-            horses.add(new Horse());
+            horses.add(new Horse(i+1));
         }
         Horse chosenHorse = horses.get(bet);
         chosenHorse.setChosen(true);
-        horses.forEach(Horse::startRun);
+        startRun(horses);
+        System.out.println("Your bet is finished on place " + (chosenHorse.getPlace()));
+    }
+
+    private static void startRun(List<Horse> horses) throws InterruptedException {
+        horses.forEach(Horse::startHorseRun);
         while (!horses.stream().allMatch(Horse::isFinished)) {
             sleep(1000);
         }
         horses.forEach(Horse::printResult);
         horses = horses.stream().sorted().toList();
-        System.out.println("Your bet is finished on place " + (horses.indexOf(chosenHorse)+1));
+        for (Horse horse: horses) {
+            horse.setPlace(horses.indexOf(horse)+1);
+        }
     }
 }

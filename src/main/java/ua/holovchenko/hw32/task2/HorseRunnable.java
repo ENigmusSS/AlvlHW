@@ -4,7 +4,6 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import static java.lang.Thread.sleep;
 
-//сделать внутренним классом класса Horse?
 public class HorseRunnable implements Runnable {
     private final Horse horse;
     ThreadLocalRandom random = ThreadLocalRandom.current();

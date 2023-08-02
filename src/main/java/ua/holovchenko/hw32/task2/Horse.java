@@ -1,5 +1,6 @@
 package ua.holovchenko.hw32.task2;
 
+
 import org.jetbrains.annotations.NotNull;
 
 public class Horse implements Comparable<Horse> {
@@ -7,9 +8,17 @@ public class Horse implements Comparable<Horse> {
     private boolean chosen;
     private long result = 0L;
 
+    private int number;
+
+    private int place;
+
     private HorseRunnable run;
 
     private boolean finished = false;
+
+    public Horse(int number) {
+        this.number = number;
+    }
 
     public void setChosen(boolean chosen) {
         this.chosen = chosen;
@@ -41,7 +50,7 @@ public class Horse implements Comparable<Horse> {
     }
 
     public void printResult() {
-        System.out.println("Result Time: " + result + " Is your bet: " + chosen);
+        System.out.println("Horse №"+ number + " Result Time: " + result + " Is your bet: " + chosen);
     }
 
     public long getResult() {
@@ -52,12 +61,28 @@ public class Horse implements Comparable<Horse> {
         this.result = result;
     }
 
-    public void startRun() {
+    public void startHorseRun() {
         this.run = new HorseRunnable(this);
         run.run();
     }
 
     public HorseRunnable getRun() {
         return run;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public int getPlace() {
+        return place;
+    }
+
+    public void setPlace(int place) {
+        this.place = place;
     }
 }
