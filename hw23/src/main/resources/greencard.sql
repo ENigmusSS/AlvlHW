@@ -1,0 +1,1 @@
+UPDATE customer SET country = 'USA' WHERE dateOfBirth < '2000-01-01';
