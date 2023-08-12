@@ -30,6 +30,7 @@
         <module>hw32</module>
         <module>practice1</module>
         <module>practice2</module>
+        <module>hw26</module>
     </modules>
 
     <properties>
