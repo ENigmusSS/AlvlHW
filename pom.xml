@@ -31,6 +31,8 @@
         <module>practice1</module>
         <module>practice2</module>
         <module>hw23</module>
+        <module>hw25</module>
+
     </modules>
 
     <properties>
