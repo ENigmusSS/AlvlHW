@@ -26,13 +26,13 @@
         <module>hw17</module>
         <module>hw18</module>
         <module>hw21</module>
-        <module>hw31</module>
-        <module>hw32</module>
-        <module>practice1</module>
-        <module>practice2</module>
         <module>hw23</module>
         <module>hw25</module>
-
+        <module>hw31</module>
+        <module>hw32</module>
+        <module>hw36</module>
+        <module>practice1</module>
+        <module>practice2</module>
     </modules>
 
     <properties>
