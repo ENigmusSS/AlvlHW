@@ -1,0 +1,1 @@
+SELECT DISTINCT firstName FROM customer;
